@@ -33,7 +33,7 @@ const UploadTab: React.FC = () => {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/resumes/upload', formData, {
+      const response = await axios.post('https://building-a-smart-resume-analyzer.vercel.app/api/resumes/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
